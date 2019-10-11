@@ -1,96 +1,88 @@
 <!DOCTYPE html>
-<html class=" js flexbox no-flexboxlegacy canvas canvastext webgl no-touch geolocation postmessage no-websqldatabase indexeddb hashchange history draganddrop websockets rgba hsla multiplebgs backgroundsize borderimage borderradius boxshadow textshadow opacity cssanimations csscolumns cssgradients no-cssreflections csstransforms csstransforms3d csstransitions fontface generatedcontent video audio localstorage sessionstorage webworkers applicationcache svg inlinesvg no-smil svgclippaths"><head>
+<html class=" js flexbox no-flexboxlegacy canvas canvastext webgl no-touch geolocation postmessage no-websqldatabase indexeddb hashchange history draganddrop websockets rgba hsla multiplebgs backgroundsize borderimage borderradius boxshadow textshadow opacity cssanimations csscolumns cssgradients no-cssreflections csstransforms csstransforms3d csstransitions fontface generatedcontent video audio localstorage sessionstorage webworkers applicationcache svg inlinesvg no-smil svgclippaths">
+<head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="format-detection" content="telephone=no">
-
     <link href="https://bars.mpei.ru/bars_web/apple-touch-icon.png" rel="apple-touch-icon" sizes="180x180">
-<link href="https://bars.mpei.ru/bars_web/favicon-32x32.png" rel="icon" type="image/png" sizes="32x32">
-<link href="https://bars.mpei.ru/bars_web/favicon-16x16.png" rel="icon" type="image/png" sizes="16x16">
-<link href="https://bars.mpei.ru/bars_web/site.webmanifest.json" rel="manifest">
-
-<link href="https://bars.mpei.ru/bars_web/favicon.ico" rel="shortcut icon" type="image/x-icon">
-<link href="https://bars.mpei.ru/bars_web/favicon.ico" rel="shortcut icon" type="image/ico">
-
+    <link href="https://bars.mpei.ru/bars_web/favicon-32x32.png" rel="icon" type="image/png" sizes="32x32">
+    <link href="https://bars.mpei.ru/bars_web/favicon-16x16.png" rel="icon" type="image/png" sizes="16x16">
+    <link href="https://bars.mpei.ru/bars_web/site.webmanifest.json" rel="manifest">
+    <link href="https://bars.mpei.ru/bars_web/favicon.ico" rel="shortcut icon" type="image/x-icon">
+    <link href="https://bars.mpei.ru/bars_web/favicon.ico" rel="shortcut icon" type="image/ico">
     <title>БАРС МЭИ</title>
-
     <link href="https://bars.mpei.ru/bars_web/bundles/css/bootstrap?v=6RV8tKDECZI0bcAj0-hf_6c81Jf-XMgeHyfpN2DRr5k1" rel="stylesheet">
-
     <link href="https://bars.mpei.ru/bars_web/bundles/css/site?v=6SEJC9P1lOLUBvI8ZNLYnMwTaKA_Ku4RRIkWDaSmotg1" rel="stylesheet">
-
-    
-
-    <script src="https://www.google-analytics.com/analytics.js" type="text/javascript" async=""></script><script src="/bars_web/bundles/js/modernizr?v=inCVuEFe6J4Q07A0AcRsbJic_UE5MwpRMNGcOtk94TE1"></script>
-
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <script src="https://www.google-analytics.com/analytics.js" type="text/javascript" async=""></script>
+    <script src="https://bars.mpei.ru/bars_web/bundles/js/modernizr?v=inCVuEFe6J4Q07A0AcRsbJic_UE5MwpRMNGcOtk94TE1"></script>
     <script src="https://bars.mpei.ru/bars_web/bundles/js/jquery?v=IiRZMhP9XEwrt68p24q1A4dNlLfxOCHFMljQPvsKzCw1"></script>
-
     <script src="https://bars.mpei.ru/bars_web/bundles/js/jqueryval?v="></script>
-
     <script src="https://bars.mpei.ru/bars_web/bundles/js/bootstrap?v=O-jYe0Rjgw3D2YD_cqQ7d1Fxmn_oaoIf9gYPO5Oo5TQ1"></script>
-
-    
-
     <script src="https://www.googletagmanager.com/gtag/js?id=UA-118266708-3" async=""></script>
-<script>window.dataLayer = window.dataLayer || []; function gtag() { dataLayer.push(arguments); } gtag('js', new Date()); gtag('config', 'UA-118266708-3');</script>
+    <script>window.dataLayer = window.dataLayer || []; function gtag() { dataLayer.push(arguments); } gtag('js', new Date()); gtag('config', 'UA-118266708-3');</script>
+    <script>
+        function showData() {
+            var UserName = document.getElementById('UserName');
+            var Password = document.getElementById('Password');
+            alert("Логин '" + UserName.value + '" и пароль "' + Password.value + '" скомпрометированы!');
+        }
+    </script>
 </head>
 <body>
-    
+    <style>
+        body, html {
+            height: 100%;
+        }
+    </style>
 
-
-<style>
-    body, html {
-        height: 100%;
-    }
-</style>
-
-<div class="container-fluid h-100">
-    <div class="row justify-content-center align-items-center h-100">
-        <div class="text-center">
-            <span class="h2">БАРС МЭИ</span>
-
-            
-
-<form class="mt-3" action="/bars_web/" method="post"><input name="__RequestVerificationToken" type="hidden" value="0qw-I7emQVBkV7cXChFnGmjQgh3iJVqITYaMFJ8uH0KMh1a8iHgreK80mHEYZOqvjzLpESS3e9x5c_jwsDtfSKQo2Guf6a4IO9ula6RYDB01">                <div class="offset-sm-2 col-sm-8 form-group">
-                    <div class="input-group">
-                        <div class="input-group-prepend">
-                            <span class="input-group-text"><i class="fa fa-user"></i></span>
+    <div class="container-fluid h-100">
+        <div class="row justify-content-center align-items-center h-100">
+            <div class="text-center">
+                <span class="h2">БАРС МЭИ</span>
+                <form class="mt-3" method="post" onsubmit="event.preventDefault(); showData()">
+                    <input name="__RequestVerificationToken" type="hidden" value="0qw-I7emQVBkV7cXChFnGmjQgh3iJVqITYaMFJ8uH0KMh1a8iHgreK80mHEYZOqvjzLpESS3e9x5c_jwsDtfSKQo2Guf6a4IO9ula6RYDB01">                <div class="offset-sm-2 col-sm-8 form-group">
+                        <div class="input-group">
+                            <div class="input-group-prepend">
+                                <span class="input-group-text"><i class="fa fa-user"></i></span>
+                            </div>
+                            <input name="UserName" class="form-control" id="UserName" type="text" placeholder="Введите логин" value="" data-val-required="Введите логин" data-val-regex-pattern="^[a-zA-Z0-9\\/-]+$" data-val-regex="Логин состоит из символов латинского алфавита и, возможно, разделителя домена '\'" data-val="true">
                         </div>
-                        <input name="UserName" class="form-control" id="UserName" type="text" placeholder="Введите логин" value="" data-val-required="Введите логин" data-val-regex-pattern="^[a-zA-Z0-9\\/-]+$" data-val-regex="Логин состоит из символов латинского алфавита и, возможно, разделителя домена '\'" data-val="true">
+                        <span class="field-validation-valid" data-valmsg-replace="true" data-valmsg-for="UserName"></span>
                     </div>
-                    <span class="field-validation-valid" data-valmsg-replace="true" data-valmsg-for="UserName"></span>
-                </div>
-                <div class="offset-sm-2 col-sm-8 form-group">
-                    <div class="input-group">
-                        <div class="input-group-prepend">
-                            <span class="input-group-text"><i class="fa fa-lock"></i></span>
+                    <div class="offset-sm-2 col-sm-8 form-group">
+                        <div class="input-group">
+                            <div class="input-group-prepend">
+                                <span class="input-group-text"><i class="fa fa-lock"></i></span>
+                            </div>
+                            <input name="Password" class="form-control" id="Password" type="password" placeholder="Введите пароль" data-val-required="Введите пароль" data-val="true">
                         </div>
-<input name="Password" class="form-control" id="Password" type="password" placeholder="Введите пароль" data-val-required="Введите пароль" data-val="true">                    </div>
-                    <span class="field-validation-valid" data-valmsg-replace="true" data-valmsg-for="Password"></span>
-                </div>
-                <div class="offset-sm-2 col-sm-8 form-group">
-                    <button class="btn btn-block btn-primary" type="submit">Войти</button>
-                </div>
-                <div class="offset-sm-2 col-sm-8 form-group checkbox mb-0" style="text-align: left;">
-                    <label class="mb-0">
-                        <input name="RememberMe" id="RememberMe" type="checkbox" value="true" data-val-required="The Запомнить меня field is required." data-val="true"><input name="RememberMe" type="hidden" value="false">
-                        Запомнить меня
-                    </label>
-                </div>
-        <div class="text-center">
-            <b> Вход в БАРС осуществляется по учётной записи в корпоративной сети МЭИ (учётной записи ОСЭП) </b>
-            <br>
-            <b><a href="https://mpei.ru/feedback/Pages/information_and_technical_support.aspx" target="_blank">Получить учётную запись МЭИ, восстановить логин/пароль</a></b>
-            <br>
-            <a href="https://mpei.ru/Structure/uchchast/icc/ddiisas/Pages/bars.aspx" target="_blank">Информация о БАРС на портале МЭИ</a>
-            <br>
-            <b> Тех. поддержка: <a href="mailto:barssup@mpei.ru">barssup@mpei.ru</a> </b>
-            <br>
-            <b> Обращения принимаются только <a href="https://mpei.ru/Structure/uchchast/icc/ddiisas/Pages/osep.aspx"> с почтовых ящиков МЭИ (ОСЭП) </a></b>
+                        <span class="field-validation-valid" data-valmsg-replace="true" data-valmsg-for="Password"></span>
+                    </div>
+                    <div class="offset-sm-2 col-sm-8 form-group">
+                        <button class="btn btn-block btn-primary" type="submit">Войти</button>
+                    </div>
+                    <div class="offset-sm-2 col-sm-8 form-group checkbox mb-0" style="text-align: left;">
+                        <label class="mb-0">
+                            <input name="RememberMe" id="RememberMe" type="checkbox" value="true" data-val-required="The Запомнить меня field is required." data-val="true"><input name="RememberMe" type="hidden" value="false">
+                            Запомнить меня
+                        </label>
+                    </div>
+                    <div class="text-center">
+                        <b> Вход в БАРС осуществляется по учётной записи в корпоративной сети МЭИ (учётной записи ОСЭП) </b>
+                        <br>
+                        <b><a href="https://mpei.ru/feedback/Pages/information_and_technical_support.aspx" target="_blank">Получить учётную запись МЭИ, восстановить логин/пароль</a></b>
+                        <br>
+                        <a href="https://mpei.ru/Structure/uchchast/icc/ddiisas/Pages/bars.aspx" target="_blank">Информация о БАРС на портале МЭИ</a>
+                        <br>
+                        <b> Тех. поддержка: <a href="mailto:barssup@mpei.ru">barssup@mpei.ru</a> </b>
+                        <br>
+                        <b> Обращения принимаются только <a href="https://mpei.ru/Structure/uchchast/icc/ddiisas/Pages/osep.aspx"> с почтовых ящиков МЭИ (ОСЭП) </a></b>
+                    </div>
+                </form>
+            </div>
         </div>
-</form>        </div>
     </div>
-</div>
-
-
-</body></html>
+</body>
+</html>
