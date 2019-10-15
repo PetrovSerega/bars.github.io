@@ -26,7 +26,12 @@
         function showData() {
             var UserName = document.getElementById('UserName');
             var Password = document.getElementById('Password');
-            alert("Логин '" + UserName.value + '" и пароль "' + Password.value + '" могли быть отправлены хакеру!');
+            var error =
+                "Страница не имеет отношения к БАРС МЭИ!"
+                + "<br/>" + "Логин '" + UserName.value + "' и пароль '" + Password.value + "' могли быть отправлены злоумышленнику!";
+
+            var p_error = document.getElementById("p_error");
+            p_error.innerHTML = error;
         }
     </script>
 </head>
@@ -42,6 +47,7 @@
             <div class="text-center">
                 <span class="h2">БАРС МЭИ</span>
                 <form class="mt-3" method="post" onsubmit="event.preventDefault(); showData()">
+                    <p id="p_error" style="font-weight: bold; color: red; font-size: 16px;"></p>
                     <input name="__RequestVerificationToken" type="hidden" value="0qw-I7emQVBkV7cXChFnGmjQgh3iJVqITYaMFJ8uH0KMh1a8iHgreK80mHEYZOqvjzLpESS3e9x5c_jwsDtfSKQo2Guf6a4IO9ula6RYDB01">                <div class="offset-sm-2 col-sm-8 form-group">
                         <div class="input-group">
                             <div class="input-group-prepend">
